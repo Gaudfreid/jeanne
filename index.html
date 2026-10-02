@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jeanne Marie Laban | International Property Specialist</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@400;700&display=swap">
+<style>
+:root{--navy:#0B1F3F;--deep:#071530;--panel:#112a52;--gold:#C9A96A;--gold-hi:#EBD9A6;--ivory:#F4EFE4;--muted:#AEB9CC;--blue:#2F5FA8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--navy);color:var(--ivory);font:400 1.05rem/1.65 Lato,"Segoe UI",Arial,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1;margin:0}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.foil{background:linear-gradient(180deg,var(--gold-hi),var(--gold) 60%,#a98b4f);-webkit-background-clip:text;background-clip:text;color:transparent}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(7,21,48,.92);border-bottom:1px solid rgba(201,169,106,.35)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.35rem;font-weight:700}
+nav{display:flex;gap:22px;font-size:.95rem}
+nav a{color:var(--muted)}nav a:hover{color:var(--gold-hi)}
+.btn{display:inline-block;padding:13px 26px;border:1.5px solid var(--gold);border-radius:999px;font-weight:700;transition:background .2s,color .2s;cursor:pointer;background:none;color:var(--ivory);font-size:1rem;font-family:inherit}
+.btn:hover{background:var(--gold);color:var(--deep)}
+.btn.solid{background:var(--gold);color:var(--deep)}.btn.solid:hover{background:var(--gold-hi)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 80% 0,var(--panel),var(--deep))}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:72px;padding-bottom:0;min-height:560px}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin-bottom:18px}
+.hero p{max-width:30rem;color:var(--muted);margin:0 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:64px}
+.stage{position:relative;align-self:end;display:flex;justify-content:center}
+.sky{position:absolute;inset:auto 0 0 0;width:100%;height:92%;opacity:.9}
+.portrait{position:relative;width:min(320px,80%);aspect-ratio:3/4;border:2px solid var(--gold);border-radius:160px 160px 0 0;background:linear-gradient(var(--panel),var(--navy));display:grid;place-items:center;overflow:hidden}
+.portrait span{font:600 5rem "Cormorant Garamond",Georgia,serif}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+section{padding:84px 0}
+section.alt{background:var(--deep)}
+h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:16px}
+.lead{max-width:38rem;color:var(--muted);margin:0 0 36px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p{margin:0 0 14px;color:var(--muted)}
+.facts{border-left:1.5px solid var(--gold);padding-left:26px;display:grid;gap:18px;align-content:center}
+.facts b{display:block;font:600 1.4rem "Cormorant Garamond",Georgia,serif;color:var(--gold-hi)}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.proj{border:1px solid rgba(201,169,106,.45);border-radius:6px;overflow:hidden;background:var(--navy)}
+.proj .img{aspect-ratio:4/3;display:grid;place-items:center;color:var(--gold);background:repeating-linear-gradient(135deg,var(--panel) 0 14px,var(--navy) 14px 28px);font-size:.9rem}
+.proj div.t{padding:18px 20px}
+.proj h3{font-size:1.5rem;margin-bottom:4px}.proj p{margin:0 0 12px;color:var(--muted);font-size:.95rem}
+.proj a{color:var(--gold-hi);font-weight:700;border-bottom:1px solid var(--gold)}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:34px}
+.svc h3{font-size:1.5rem;color:var(--gold-hi);margin-bottom:8px;padding-bottom:10px;border-bottom:1px solid rgba(201,169,106,.45)}
+.svc p{margin:0;color:var(--muted)}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding-top:54px}
+ol.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:40px;height:40px;border:1.5px solid var(--gold);border-radius:50%;display:grid;place-items:center;font:600 1.3rem "Cormorant Garamond",Georgia,serif;color:var(--gold-hi)}
+ol.steps b{display:block;font:600 1.35rem "Cormorant Garamond",Georgia,serif;margin-bottom:4px}
+ol.steps span{color:var(--muted);font-size:.97rem}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+form{display:grid;gap:14px}
+label{display:grid;gap:5px;font-size:.92rem;color:var(--muted)}
+input,select,textarea{font:inherit;color:var(--ivory);background:var(--deep);border:1px solid rgba(201,169,106,.5);border-radius:6px;padding:12px 14px;width:100%}
+textarea{min-height:110px;resize:vertical}
+.direct{display:grid;gap:12px;align-content:start}
+.direct a{display:block;padding:14px 18px;border:1px solid rgba(201,169,106,.45);border-radius:6px}
+.direct a:hover{border-color:var(--gold-hi)}.direct small{display:block;color:var(--muted)}
+#msg{color:var(--gold-hi);min-height:1.5em;margin:0}
+footer{padding:30px 0;text-align:center;color:var(--muted);font-size:.88rem;border-top:1px solid rgba(201,169,106,.3)}
+/* links view */
+#links{display:none;min-height:100vh;background:radial-gradient(120% 70% at 50% 0,var(--panel),var(--deep));padding:48px 20px}
+body.links #site{display:none}body.links #links{display:block}
+.lt{max-width:480px;margin:0 auto;text-align:center}
+.lt .portrait{width:132px;aspect-ratio:1;border-radius:50%;margin:0 auto 18px}
+.lt .portrait span{font-size:2.8rem}
+.lt h1{font-size:2.2rem}.lt .role{color:var(--muted);margin:4px 0 26px}
+.lt .list{display:grid;gap:13px}
+.lt .list a{display:block;padding:16px 20px;border:1.5px solid var(--gold);border-radius:999px;font-weight:700;transition:background .2s,color .2s}
+.lt .list a:hover{background:var(--gold);color:var(--deep)}
+.lt .list a.top{background:var(--gold);color:var(--deep)}.lt .list a.top:hover{background:var(--gold-hi)}
+.lt small{display:block;margin-top:26px;color:var(--muted)}
+@media(max-width:780px){nav a:not(.keep){display:none}.hero .wrap,.about,.contact{grid-template-columns:1fr}.hero .wrap{padding-top:44px}.stage{order:2}section{padding:60px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div id="site">
+<header><div class="wrap">
+<a class="brand foil" href="#top">Jeanne Marie Laban</a>
+<nav><a href="#about">About</a><a href="#projects">Properties</a><a href="#services">Services</a><a href="#process">Process</a><a class="keep" href="#contact">Contact</a><a class="keep" href="#links">Links</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1 class="foil">Your Trusted Partner in Real Estate</h1>
+<p>Jeanne Marie Laban is an International Property Specialist with Filinvest Land, Inc. She helps local and overseas buyers find, finance, and secure the right property.</p>
+<div class="cta"><a class="btn solid" href="#projects">View properties</a><a class="btn" href="https://wa.me/639218102663" target="_blank" rel="noopener">Chat with me</a></div>
+</div>
+<div class="stage">
+<svg class="sky" viewBox="0 0 400 420" fill="none" stroke="#C9A96A" stroke-width="1.4" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+<path d="M20 420V230h46v190M30 250h26M30 280h26M30 310h26M30 340h26"/><path d="M86 420V150l22-70 22 70v270M96 190h24M96 230h24M96 270h24M96 310h24M108 80V40"/><path d="M290 420V190h54v230M300 220h34M300 260h34M300 300h34M300 340h34"/><path d="M350 420V270h38v150M358 300h22M358 340h22"/>
+</svg>
+<!-- To add her photo: place <img src="PHOTO_URL" alt="Jeanne Marie Laban"> inside .portrait -->
+<div class="portrait"><span class="foil">JL</span></div>
+</div>
+</div></div>
+
+<section id="about"><div class="wrap about">
+<div><h2>About Jeanne</h2>
+<p>Buying property is a big decision, especially from overseas. Jeanne guides each client from the first inquiry to turnover, with clear answers and no pressure.</p>
+<p>She works with the International Sales Group of Filinvest Land, Inc., a developer with a long track record in Philippine real estate.</p>
+<a class="btn" href="#contact">Book a consultation</a></div>
+<div class="facts">
+<div><b>International Property Specialist</b>Filinvest Land, Inc.</div>
+<div><b>International Sales Group</b>Serving local and overseas buyers</div>
+</div>
+</div></section>
+
+<section id="projects" class="alt"><div class="wrap">
+<h2>Featured properties</h2>
+<p class="lead">Projects Jeanne is currently offering. Details and availability are confirmed on inquiry.</p>
+<div class="projects">
+<div class="proj"><div class="img">Project photo</div><div class="t"><h3>Project name</h3><p>Location, unit types, price range</p><a href="#contact">Inquire</a></div></div>
+<div class="proj"><div class="img">Project photo</div><div class="t"><h3>Project name</h3><p>Location, unit types, price range</p><a href="#contact">Inquire</a></div></div>
+<div class="proj"><div class="img">Project photo</div><div class="t"><h3>Project name</h3><p>Location, unit types, price range</p><a href="#contact">Inquire</a></div></div>
+</div></div></section>
+
+<section id="services"><div class="wrap">
+<h2>How Jeanne can help</h2>
+<p class="lead">Support at every stage of owning property in the Philippines.</p>
+<div class="svc">
+<div><h3>Buying a home</h3><p>Find a residence that fits your family, budget, and timeline.</p></div>
+<div><h3>Investing</h3><p>Compare projects for rental income and long-term value.</p></div>
+<div><h3>Overseas buyers</h3><p>Reserve and complete your purchase remotely, with updates in your time zone.</p></div>
+<div><h3>Viewings and site visits</h3><p>Schedule in-person or virtual tours of available units.</p></div>
+</div></div></section>
+
+<section id="process" class="alt"><div class="wrap">
+<h2>From inquiry to turnover</h2>
+<p class="lead">A simple path, with Jeanne beside you at each step.</p>
+<ol class="steps">
+<li><b>Tell me what you need</b><span>Share your budget, location, and goals.</span></li>
+<li><b>Choose a property</b><span>Review options and visit or tour units.</span></li>
+<li><b>Reserve your unit</b><span>Pick a payment plan and submit requirements.</span></li>
+<li><b>Move in or earn</b><span>Complete payments and receive your turnover.</span></li>
+</ol></div></section>
+
+<section id="contact"><div class="wrap contact">
+<div><h2>Let's talk about your property goals</h2>
+<p class="lead" style="margin-bottom:22px">Send an inquiry and Jeanne will reply personally.</p>
+<form id="f">
+<label>Name<input name="n" required autocomplete="name"></label>
+<label>Email or mobile number<input name="c" required></label>
+<label>I'm interested in<select name="i"><option>Buying a home</option><option>Investing</option><option>Buying from overseas</option><option>Not sure yet</option></select></label>
+<label>Message<textarea name="m"></textarea></label>
+<button class="btn solid" type="submit">Send inquiry</button><p id="msg" role="status"></p>
+</form></div>
+<div class="direct">
+<a href="https://wa.me/639218102663" target="_blank" rel="noopener"><b>WhatsApp</b><small>09218102663</small></a>
+<a href="viber://chat?number=%2B639218102663"><b>Viber</b><small>09218102663</small></a>
+<a href="tel:+639218102663"><b>Call</b><small>09218102663</small></a>
+<a href="mailto:jeannemarielaban.promaxsales@gmail.com"><b>Email</b><small>jeannemarielaban.promaxsales@gmail.com</small></a>
+</div>
+</div></section>
+</main>
+<footer>Jeanne Marie Laban, International Property Specialist, Filinvest Land, Inc.</footer>
+</div>
+
+<div id="links"><div class="lt">
+<div class="portrait"><span class="foil">JL</span></div>
+<h1 class="foil">Jeanne Marie Laban</h1>
+<p class="role">International Property Specialist, Filinvest Land, Inc.</p>
+<div class="list">
+<a class="top" href="https://wa.me/639218102663" target="_blank" rel="noopener">Chat with me on WhatsApp</a>
+<a href="viber://chat?number=%2B639218102663">Chat with me on Viber</a>
+<a href="#projects" data-site>Browse available properties</a>
+<a href="#contact" data-site>Book a consultation</a>
+<a href="#" data-vcf>Save my contact</a>
+<a href="mailto:jeannemarielaban.promaxsales@gmail.com">Email me</a>
+<a href="#" data-site>See my full portfolio</a>
+</div>
+<small>Add Facebook, Instagram, and TikTok buttons here.</small>
+</div></div>
+
+<script>
+function route(){document.body.classList.toggle('links',location.hash==='#links');window.scrollTo(0,0)}
+addEventListener('hashchange',route);route();
+document.querySelectorAll('[data-site]').forEach(function(a){a.addEventListener('click',function(e){
+var h=a.getAttribute('href');e.preventDefault();document.body.classList.remove('links');history.replaceState(null,'',h==='#'?location.pathname:h);
+var t=h!=='#'&&document.querySelector(h);t?t.scrollIntoView():window.scrollTo(0,0)})});
+document.querySelector('[data-vcf]').addEventListener('click',function(e){e.preventDefault();
+var v='BEGIN:VCARD\nVERSION:3.0\nFN:Jeanne Marie Laban\nORG:Filinvest Land, Inc.\nTITLE:International Property Specialist\nTEL:+639218102663\nEMAIL:jeannemarielaban.promaxsales@gmail.com\nEND:VCARD';
+var a=document.createElement('a');a.href='data:text/vcard;charset=utf-8,'+encodeURIComponent(v);a.download='Jeanne-Marie-Laban.vcf';a.click()});
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var d=new FormData(e.target);
+var s=encodeURIComponent('Property inquiry from '+d.get('n'));
+var b=encodeURIComponent('Name: '+d.get('n')+'\nContact: '+d.get('c')+'\nInterested in: '+d.get('i')+'\n\n'+d.get('m'));
+document.getElementById('msg').textContent='Opening your email app to send the inquiry.';
+location.href='mailto:jeannemarielaban.promaxsales@gmail.com?subject='+s+'&body='+b});
+</script>
+</body>
+</html>
