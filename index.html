@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jeanne Marie Laban | International Property Specialist</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@400;700&display=swap">
+<style>
+:root{--bg:#EDEAE4;--ink:#1d2433;--navy:#0B1F3F;--gold:#C9A96A;--gold-hi:#EBD9A6;--mute:#5d6577;--line:rgba(11,31,63,.18);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:60px}*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 Lato,"Segoe UI",Arial,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.12;margin:0;color:var(--navy)}
+a{color:inherit;text-decoration:none}:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.btn{display:inline-block;padding:12px 24px;border:1.5px solid var(--gold);border-radius:3px;font-weight:700;font-size:.92rem;background:none;color:var(--navy);cursor:pointer;font-family:inherit;transition:background .2s}
+.btn:hover{background:var(--gold-hi)}.btn.solid{background:var(--gold)}
+header{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:20;height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:rgba(11,31,63,.55);backdrop-filter:blur(8px);color:#fff}
+.brand{font:700 1.3rem "Cormorant Garamond",Georgia,serif}
+nav{display:flex;gap:24px;align-items:center;font-size:.88rem}nav a:not(.btn):hover{color:var(--gold-hi)}nav .btn{padding:8px 16px;background:var(--gold)}
+#journey{height:600vh;position:relative}
+.stage{position:sticky;top:0;height:100vh;overflow:hidden;background:linear-gradient(#8fb6dc,#e9e1d2)}
+.stage::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(rgba(7,21,48,.5),transparent 38%),radial-gradient(120% 90% at 50% 50%,transparent 60%,rgba(7,21,48,.35))}
+#c{position:absolute;inset:0;width:100%;height:100%;display:block}
+.txt{position:absolute;left:0;right:0;top:17%;z-index:4;text-align:center;padding:0 24px;opacity:0;pointer-events:none;color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.45)}
+.txt h1,.txt h2{font-size:clamp(1.5rem,3.6vw,2.8rem);letter-spacing:.07em;text-transform:uppercase;font-weight:500;color:#fff}
+.txt p{margin:10px auto 0;max-width:30rem}
+.row{margin-top:20px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.row .btn{color:var(--navy);text-shadow:none}.row .btn:not(.solid){color:#fff;border-color:#fff}
+.tns{position:absolute;z-index:5;left:50%;bottom:22px;transform:translateX(-50%);display:flex;gap:8px;width:min(720px,92vw)}
+.tn{flex:1;padding:8px 4px;border:0;border-top:2px solid rgba(255,255,255,.55);background:none;color:#fff;font:700 .74rem Lato,Arial,sans-serif;cursor:pointer;text-shadow:0 1px 5px rgba(0,0,0,.6)}.tn.on{border-top:3px solid var(--gold)}
+section.pg{padding:90px 24px}.in{max-width:1040px;margin:0 auto}
+h2.big{font-size:clamp(2rem,4vw,3rem);margin-bottom:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.lead{color:var(--mute);max-width:36rem;margin:0 0 28px}
+.portrait{aspect-ratio:4/5;max-width:340px;border:2px solid var(--gold);border-radius:170px 170px 0 0;background:linear-gradient(#f4efe4,#d8d1c2);display:grid;place-items:center;font:600 5rem "Cormorant Garamond",Georgia,serif;color:var(--navy);overflow:hidden;position:relative;margin:0 auto}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.dark{background:var(--navy);color:#f4efe4}.dark h2,.dark h3{color:#fff}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.proj{border:1px solid rgba(201,169,106,.55);border-radius:4px;overflow:hidden}
+.proj .img{aspect-ratio:4/3;display:grid;place-items:center;color:var(--gold);font-size:.9rem;background:repeating-linear-gradient(135deg,#112a52 0 14px,#0B1F3F 14px 28px)}
+.proj div.t{padding:16px 18px}.proj h3{font-size:1.45rem}.proj p{margin:2px 0 10px;color:#b6c0d4;font-size:.94rem}.proj a{color:var(--gold-hi);font-weight:700;border-bottom:1px solid var(--gold)}
+form{display:grid;gap:13px}label{display:grid;gap:4px;font-size:.9rem;color:var(--mute)}
+input,select,textarea{font:inherit;color:var(--ink);background:#f7f4ef;border:1px solid var(--line);border-radius:3px;padding:11px 13px;width:100%}textarea{min-height:100px;resize:vertical}
+.direct{display:grid;gap:12px;align-content:start}.direct a{display:block;padding:13px 16px;border:1px solid var(--line);border-radius:3px;background:#f7f4ef}.direct a:hover{border-color:var(--gold)}.direct small{display:block;color:var(--mute)}
+#msg{margin:0;min-height:1.4em;color:var(--navy)}
+footer{padding:26px;text-align:center;font-size:.86rem;color:#b6c0d4;background:var(--navy)}
+#links{display:none;min-height:100vh;background:radial-gradient(120% 70% at 50% 0,#112a52,#071530);padding:48px 20px;color:#f4efe4}
+body.links #site{display:none}body.links #links{display:block}
+.lt{max-width:480px;margin:0 auto;text-align:center}.lt .portrait{width:130px;aspect-ratio:1;border-radius:50%;font-size:2.8rem;margin-bottom:16px}
+.lt h1{font-size:2.2rem;color:var(--gold-hi)}.lt .role{color:#aeb9cc;margin:4px 0 24px}
+.lt .list{display:grid;gap:12px}.lt .list a{padding:15px 20px;border:1.5px solid var(--gold);border-radius:999px;font-weight:700;transition:background .2s,color .2s}.lt .list a:hover,.lt .list a.top{background:var(--gold);color:#071530}
+@media(max-width:780px){nav a:not(.btn){display:none}header{padding:0 16px}.two{grid-template-columns:1fr}.tn{font-size:.62rem}#journey{height:520vh}section.pg{padding:64px 22px}}
+</style></head><body>
+<div id="site">
+<header><a class="brand" href="#top">Jeanne Marie Laban</a><nav><a href="#about">About</a><a href="#projects">Properties</a><a href="#links">Links</a><a class="btn" href="#contact">Book a viewing</a></nav></header>
+<main id="top">
+<div id="journey"><div class="stage"><canvas id="c" aria-label="3D tour of a modern villa"></canvas>
+<div class="txt"><h1>One conversation. An entire home.</h1><p>Jeanne Marie Laban, International Property Specialist, Filinvest Land, Inc.</p></div>
+<div class="txt"><h2>Your journey starts here.</h2><p>Tell Jeanne what you need, from anywhere in the world.</p></div>
+<div class="txt"><h2>Space follows the journey.</h2><p>Tour properties in person or online.</p></div>
+<div class="txt"><h2>The view was designed first.</h2><p>Compare projects and choose a payment plan that fits.</p></div>
+<div class="txt"><h2>Your story ends at home.</h2><p>Reserve your unit and receive your turnover with Jeanne beside you.</p><div class="row" style="pointer-events:auto"><a class="btn solid" href="#projects">View properties</a><a class="btn" href="#contact">Book a viewing</a></div></div>
+<div class="tns"><button class="tn">Discover</button><button class="tn">Share</button><button class="tn">Visit</button><button class="tn">Choose</button><button class="tn">Move in</button></div>
+</div></div>
+<section class="pg" id="about"><div class="in two"><div class="portrait"><!-- Add her photo: <img src="PHOTO_URL" alt="Jeanne Marie Laban"> -->JL</div>
+<div><h2 class="big">Meet Jeanne</h2><p class="lead">Buying property is a big decision, especially from overseas. Jeanne guides each client from the first inquiry to turnover, with clear answers and no pressure. She is part of the International Sales Group of Filinvest Land, Inc.</p><a class="btn solid" href="#contact">Book a consultation</a></div></div></section>
+<section class="pg dark" id="projects"><div class="in"><h2 class="big">Featured properties</h2><p class="lead" style="color:#b6c0d4">Projects Jeanne is currently offering. Details and availability are confirmed on inquiry.</p>
+<div class="projects"><div class="proj"><div class="img">Project photo</div><div class="t"><h3>Project name</h3><p>Location, unit types, price range</p><a href="#contact">Inquire</a></div></div><div class="proj"><div class="img">Project photo</div><div class="t"><h3>Project name</h3><p>Location, unit types, price range</p><a href="#contact">Inquire</a></div></div><div class="proj"><div class="img">Project photo</div><div class="t"><h3>Project name</h3><p>Location, unit types, price range</p><a href="#contact">Inquire</a></div></div></div></div></section>
+<section class="pg" id="contact"><div class="in two" style="align-items:start"><div><h2 class="big">Let's talk about your property goals</h2><p class="lead" style="margin-bottom:20px">Send an inquiry and Jeanne will reply personally.</p>
+<form id="f"><label>Name<input name="n" required autocomplete="name"></label><label>Email or mobile number<input name="c" required></label><label>I'm interested in<select name="i"><option>Buying a home</option><option>Investing</option><option>Buying from overseas</option><option>Not sure yet</option></select></label><label>Message<textarea name="m"></textarea></label><button class="btn solid" type="submit">Send inquiry</button><p id="msg" role="status"></p></form></div>
+<div class="direct"><a href="https://wa.me/639218102663" target="_blank" rel="noopener"><b>WhatsApp</b><small>09218102663</small></a><a href="viber://chat?number=%2B639218102663"><b>Viber</b><small>09218102663</small></a><a href="tel:+639218102663"><b>Call</b><small>09218102663</small></a><a href="mailto:jeannemarielaban.promaxsales@gmail.com"><b>Email</b><small>jeannemarielaban.promaxsales@gmail.com</small></a></div></div></section>
+</main><footer>Jeanne Marie Laban, International Property Specialist, Filinvest Land, Inc.</footer></div>
+<div id="links"><div class="lt"><div class="portrait">JL</div><h1>Jeanne Marie Laban</h1><p class="role">International Property Specialist, Filinvest Land, Inc.</p>
+<div class="list"><a class="top" href="https://wa.me/639218102663" target="_blank" rel="noopener">Chat with me on WhatsApp</a><a href="viber://chat?number=%2B639218102663">Chat with me on Viber</a><a href="#projects" data-site>Browse available properties</a><a href="#contact" data-site>Book a consultation</a><a href="#" data-vcf>Save my contact</a><a href="mailto:jeannemarielaban.promaxsales@gmail.com">Email me</a><a href="#" data-site>See my full portfolio</a></div></div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+var J=document.getElementById('journey'),ST=J.firstChild,TX=[].slice.call(document.querySelectorAll('.txt')),TN=[].slice.call(document.querySelectorAll('.tn')),N=5,tp=0,cp=0,GL=null;
+function prog(){var r=J.getBoundingClientRect();return Math.max(0,Math.min(1,-r.top/(J.offsetHeight-innerHeight)))}
+function ui(p){var x=p*N;TX.forEach(function(t,i){var d=Math.abs(x-(i+.5)),o=(i==0&&x<.5)||(i==N-1&&x>N-.5)?1:Math.max(0,Math.min(1,1.6-2*d));t.style.opacity=o;t.style.pointerEvents=o>.6?'auto':'none'});TN.forEach(function(t,i){t.classList.toggle('on',Math.floor(Math.min(x,N-.001))==i)})}
+(function(){
+if(typeof THREE==='undefined')return;var T=THREE,R;
+try{R=new T.WebGLRenderer({canvas:document.getElementById('c'),antialias:true,alpha:true})}catch(e){return}
+R.outputEncoding=T.sRGBEncoding;R.toneMapping=T.ACESFilmicToneMapping;R.shadowMap.enabled=true;R.shadowMap.type=T.PCFSoftShadowMap;
+var S=new T.Scene(),C=new T.PerspectiveCamera(42,1,.1,400),V=function(a,b,c){return new T.Vector3(a,b,c)};
+function M(c,o){return new T.MeshStandardMaterial(Object.assign({color:c,roughness:.85},o||{}))}
+function bx(w,h,d,x,y,z,m,sh){var o=new T.Mesh(new T.BoxGeometry(w,h,d),m);o.position.set(x,y,z);if(sh!==0)o.castShadow=true;o.receiveShadow=true;S.add(o);return o}
+var plaster=M(0xf3f0e9),wood=M(0xa9825a,{roughness:.6}),dark=M(0x2a2e36),stone=M(0xd2cbbd),fab=M(0x8d867a),
+glass=M(0xbfe0f0,{transparent:true,opacity:.22,roughness:.05}),water=M(0x4cc3e0,{roughness:.1,emissive:0x1a7fa8,emissiveIntensity:.55}),
+warm=M(0xffe0a8,{emissive:0xffc27a,emissiveIntensity:.2});
+bx(90,.4,34,0,-.2,2,stone);var sea=new T.Mesh(new T.PlaneGeometry(900,900),M(0x2f5d8f,{roughness:.25,metalness:.2}));sea.rotation.x=-Math.PI/2;sea.position.set(0,-2.5,0);S.add(sea);
+bx(14,.3,8,0,.15,0,wood);bx(14,3.4,.3,0,1.7,-4,plaster);bx(.3,3.4,8,-7,1.7,0,plaster);bx(.3,3.4,8,7,1.7,0,plaster);bx(15,.35,9,0,3.55,0,dark);bx(14,3.2,.05,0,1.75,4,glass,0);
+bx(9,3,6.5,-2.5,5.4,-.5,wood);bx(10,.3,7.5,-2.5,7.05,-.5,dark);bx(8,1.6,.06,-2.5,5.4,2.78,glass,0);
+bx(4,.6,1.4,-1,.6,-.8,fab);bx(4,.9,.35,-1,1.1,-1.4,fab);bx(5,.03,3,-1,.32,.4,M(0xc9bfae));bx(1.4,.4,.9,-1,.5,.9,wood);bx(.9,1.9,.9,4,1.2,-3,M(0x3b3f48));
+bx(18,.3,6,0,.15,7,wood);bx(10,.05,3.2,0,.33,7.2,water,0);[[10.6,.3,0,5.5],[10.6,.3,0,8.9],[.3,3.8,-5.3,7.2],[.3,3.8,5.3,7.2]].forEach(function(a){bx(a[0],.12,a[1],a[2],.32,a[3],stone)});
+bx(.8,.25,2,-7.5,.45,8,plaster);bx(.8,.25,2,7.5,.45,8,plaster);
+var pl=new T.PointLight(0xffc27a,0,16);pl.position.set(0,2.6,1);S.add(pl);
+for(var i=-1;i<2;i++){var s=new T.Mesh(new T.SphereGeometry(.24,16,12),warm);s.position.set(i*2.6,2.7,1);S.add(s)}
+[[-16,-6,5],[-13,5,4],[15,-3,6],[13,7,4.5],[19,10,5],[-19,11,5.5],[-10,-10,6],[9,-10,5]].forEach(function(t){var h=t[2],k=new T.Mesh(new T.CylinderGeometry(.25,.35,h*.6,8),M(0x5b4631));k.position.set(t[0],h*.3,t[1]);k.castShadow=true;S.add(k);var l=new T.Mesh(new T.IcosahedronGeometry(h*.42,1),M(0x2f5a3c));l.position.set(t[0],h*.8,t[1]);l.castShadow=true;S.add(l)});
+var hemi=new T.HemisphereLight(0xcfe3ff,0xb8a88a,.7),sun=new T.DirectionalLight(0xfff1d6,2.2);S.add(hemi,sun);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);sun.shadow.bias=-.0005;var sc=sun.shadow.camera;sc.left=sc.bottom=-30;sc.right=sc.top=30;sc.far=140;
+var line=new T.CatmullRomCurve3([V(-7,6.9,3.6),V(-7,3.4,4.3),V(-7,.35,5),V(-5.6,.36,9.4),V(0,.36,10.2),V(5.7,.36,9.4),V(5.7,.36,5.2),V(10,.4,6),V(13,.3,14),V(0,.3,26)]);
+var g1=new T.TubeGeometry(line,600,.07,6,false),g2=new T.TubeGeometry(line,300,.3,6,false);
+S.add(new T.Mesh(g1,new T.MeshBasicMaterial({color:0xf6e1a2,toneMapped:false})),new T.Mesh(g2,new T.MeshBasicMaterial({color:0xc9a96a,transparent:true,opacity:.3,blending:T.AdditiveBlending,depthWrite:false,toneMapped:false})));
+var cc=new T.CatmullRomCurve3([V(24,15,30),V(5,2.3,15.5),V(-9,1.7,13),V(0,1.6,12.2),V(-20,9,27)]),ct=new T.CatmullRomCurve3([V(0,2.5,2),V(-1,1.8,2),V(4,1,8),V(0,2.9,40),V(0,2.5,2)]);
+var cA=[new T.Color(0x8fb6dc),new T.Color(0xe9e1d2)],cB=[new T.Color(0x34456f),new T.Color(0xf2a773)],tmp=new T.Color(),tmp2=new T.Color(),sw=new T.Color(0xfff1d6),so=new T.Color(0xff9a55);
+function rs(){var w=ST.clientWidth,h=ST.clientHeight;if(!w)return;R.setPixelRatio(Math.min(devicePixelRatio,2));R.setSize(w,h,false);C.aspect=w/h;C.fov=w/h<1?62:42;C.updateProjectionMatrix()}
+addEventListener('resize',rs);rs();GL=function(p){
+var s=Math.max(0,Math.min(1,(p-.3)/.45));s=s*s*(3-2*s);tmp.copy(cA[0]).lerp(cB[0],s);tmp2.copy(cA[1]).lerp(cB[1],s);
+ST.style.background='linear-gradient(#'+tmp.getHexString()+',#'+tmp2.getHexString()+')';S.fog=new T.Fog(tmp2.getHex(),45,170);
+sun.color.copy(sw).lerp(so,s);sun.intensity=2.2-.8*s;sun.position.set(30,34-24*s,36);hemi.intensity=.7-.35*s;pl.intensity=1.6*s;warm.emissiveIntensity=.2+1.6*s;
+C.position.copy(cc.getPoint(p));C.lookAt(ct.getPoint(p));g1.setDrawRange(0,Math.floor(g1.index.count*p/3)*3);g2.setDrawRange(0,Math.floor(g2.index.count*p/3)*3);R.render(S,C)}
+})();
+function tick(){tp=prog();cp+=(tp-cp)*.09;ui(cp);if(GL&&ST.clientHeight)GL(cp);requestAnimationFrame(tick)}tick();
+TN.forEach(function(t,i){t.onclick=function(){scrollTo({top:J.offsetTop+(J.offsetHeight-innerHeight)*(i+.5)/N})}});
+function route(){document.body.classList.toggle('links',location.hash==='#links');scrollTo(0,0)}addEventListener('hashchange',route);route();
+document.querySelectorAll('[data-site]').forEach(function(a){a.onclick=function(e){var h=a.getAttribute('href');e.preventDefault();document.body.classList.remove('links');history.replaceState(null,'',h==='#'?location.pathname:h);var t=h!=='#'&&document.querySelector(h);t?t.scrollIntoView():scrollTo(0,0)}});
+document.querySelector('[data-vcf]').onclick=function(e){e.preventDefault();var v='BEGIN:VCARD\nVERSION:3.0\nFN:Jeanne Marie Laban\nORG:Filinvest Land, Inc.\nTITLE:International Property Specialist\nTEL:+639218102663\nEMAIL:jeannemarielaban.promaxsales@gmail.com\nEND:VCARD',a=document.createElement('a');a.href='data:text/vcard;charset=utf-8,'+encodeURIComponent(v);a.download='Jeanne-Marie-Laban.vcf';a.click()};
+document.getElementById('f').onsubmit=function(e){e.preventDefault();var d=new FormData(e.target);document.getElementById('msg').textContent='Opening your email app to send the inquiry.';location.href='mailto:jeannemarielaban.promaxsales@gmail.com?subject='+encodeURIComponent('Property inquiry from '+d.get('n'))+'&body='+encodeURIComponent('Name: '+d.get('n')+'\nContact: '+d.get('c')+'\nInterested in: '+d.get('i')+'\n\n'+d.get('m'))};
+</script></body></html>
